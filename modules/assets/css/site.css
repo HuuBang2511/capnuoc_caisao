@@ -1,0 +1,227 @@
+html,
+body {
+    height: 100%;
+    color: #000;
+    font-family:Arial, sans-serif;
+    font-size: 13px;
+    direction: ltr;
+}
+/*::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
+/*.wrap {*/
+/*    min-height: 100%;*/
+/*    height: auto;*/
+/*    margin: 0 auto -60px;*/
+/*    padding: 0 0 60px;*/
+/*}*/
+
+/*.wrap > .container {*/
+/*    padding: 70px 15px 20px;*/
+/*}*/
+
+/*.footer {*/
+/*    height: 60px;*/
+/*    background-color: #f5f5f5;*/
+/*    border-top: 1px solid #ddd;*/
+/*    padding-top: 20px;*/
+/*}*/
+
+/*.jumbotron {*/
+/*    text-align: center;*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*.jumbotron .btn {*/
+/*    font-size: 21px;*/
+/*    padding: 14px 24px;*/
+/*}*/
+
+/*.not-set {*/
+/*    color: #c55;*/
+/*    font-style: italic;*/
+/*}*/
+
+/*!* add sorting icons to gridview sort links *!*/
+/*a.asc:after, a.desc:after {*/
+/*    position: relative;*/
+/*    top: 1px;*/
+/*    display: inline-block;*/
+/*    font-family:Arial, sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*    line-height: 1;*/
+/*    padding-left: 5px;*/
+/*}*/
+
+/*a.asc:after {*/
+/*    content: !*"\e113"*! "\e151";*/
+/*}*/
+
+/*a.desc:after {*/
+/*    content: !*"\e114"*! "\e152";*/
+/*}*/
+
+/*.sort-numerical a.asc:after {*/
+/*    content: "\e153";*/
+/*}*/
+
+/*.sort-numerical a.desc:after {*/
+/*    content: "\e154";*/
+/*}*/
+
+/*.sort-ordinal a.asc:after {*/
+/*    content: "\e155";*/
+/*}*/
+
+/*.sort-ordinal a.desc:after {*/
+/*    content: "\e156";*/
+/*}*/
+
+/*.grid-view th {*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*.hint-block {*/
+/*    display: block;*/
+/*    margin-top: 5px;*/
+/*    color: #999;*/
+/*}*/
+
+/*.error-summary {*/
+/*    color: #a94442;*/
+/*    background: #fdf7f7;*/
+/*    border-left: 3px solid #eed3d7;*/
+/*    padding: 10px 20px;*/
+/*    margin: 0 0 15px 0;*/
+/*}*/
+
+/*!* align the logout "link" (button in form) of the navbar *!*/
+/*.nav li > form > button.logout {*/
+/*    padding: 15px;*/
+/*    border: none;*/
+/*}*/
+
+/*@media(max-width:767px) {*/
+/*    .nav li > form > button.logout {*/
+/*        display:block;*/
+/*        text-align: left;*/
+/*        width: 100%;*/
+/*        padding: 10px 15px;*/
+/*    }*/
+/*}*/
+
+/*.nav > li > form > button.logout:focus,*/
+/*.nav > li > form > button.logout:hover {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.nav > li > form > button.logout:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*.navbar-brand {*/
+/*    font-size: 1rem;*/
+/*}*/
+
+/*.navbar-brand img {*/
+/*    height: 2.5rem;*/
+/*}*/
+
+/*.user-avatar {*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*}*/
+
+/*.user-avatar img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*!* select option {*/
+/*    background-color: #262d3c;*/
+/*} *!*/
+
+/*.btn {*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.leaflet-marker-icon {*/
+/*    -webkit-filter: drop-shadow(0px 0px 3px #333);*/
+/*    filter: drop-shadow(0px 0px 3px #333);*/
+/*}*/
+
+/*.card-img[lazy="error"], .card-img[lazy="loaded"] {*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.card-img[lazy="loading"] {*/
+/*    object-fit: none;*/
+/*}*/
+
+/*.btn-light {*/
+/*    color: #fff;*/
+/*}*/
+
+/*.btn-light:hover {*/
+/*    color: #fff;*/
+/*    background-color: rgba(255,255,255,.2);*/
+/*}*/
+
+/*.btn-order::after {*/
+/*    content: '\ee4e';*/
+/*}*/
+
+/*.form-control {*/
+/*    border-color: rgba(0,0,0,.2);*/
+/*}*/
+
+/*.rating-wrap .icon-star {*/
+/*    cursor: pointer;*/
+/*    color: #ccc;*/
+/*    transition: .3s all ease;*/
+/*}*/
+
+/*.rating-wrap .icon-star.hover,*/
+/*.rating-wrap .icon-star.active.hover {*/
+/*    color: #ffb74d;*/
+/*}*/
+
+/*.rating-wrap .icon-star.active {*/
+/*    color: #e7ff00;*/
+/*}*/
+
+/*.card-overlay.point-counter,*/
+/*.card-overlay.user-rating {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    padding: .625rem .3125rem;*/
+/*    background: rgba(0, 0, 0, .2)*/
+/*}*/
+
+/*.card-overlay.user-rating {*/
+/*    background: #262d3c;*/
+/*    transition: .5s all ease;*/
+/*}*/
+
+.leaflet-control-locate .icon-target {
+    color: black;
+}
+
+.error-message {
+    color: var(--danger);
+}
+
+.leaflet-popup-content {
+    width: 250px !important;
+}
+
+.leaflet-popup {
+    left: -150px !important;
+}

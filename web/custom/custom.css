@@ -1,0 +1,158 @@
+.modal-header, .modal-footer {
+    display: block;
+}
+
+.help-block {
+    color: red;
+}
+
+.no-padding-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.padding-tb-05 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.padding-b-0 {
+    padding-bottom: 0 !important;
+}
+
+.padding-t-0 {
+    padding-top: 0 !important;
+}
+
+.margin-tb-05 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.content-full-width {
+    padding: 0;
+    width: 100%;
+}
+
+.menu-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.row-map {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.custom-text-summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.table-td-padding-015 td, .table-td-padding-015 th {
+    padding: 0.15rem;
+}
+
+.custom-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#map-container {
+    height: 100vh;
+}
+
+.map-content {
+    height: 100%;
+}
+
+.table-custom .serial-td {
+    width: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-left: 5px solid #0037a1;
+}
+
+.nav-main-module > .nav-main-link, .nav-main-module > .nav-main-link:hover, .nav-main-module.open > .nav-main-link-submenu {
+    background-color: #022954;
+    border-radius: 0.2rem;
+}
+
+.nav-main-module > .nav-main-link-submenu::before {
+    content: '\f107';
+    opacity: .4;
+    color: white;
+}
+
+.nav-main-module.open>.nav-main-link-submenu::after {
+    opacity: .6;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    color: white;
+}
+
+.nav-main-module > a > i, .nav-main-module > a >  span{
+    color: #ffffff !important;
+}
+
+.block-footer {
+    transition: opacity .25s ease-out;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem;
+    overflow-x: visible;
+}
+
+.table td, .table th {
+    padding: 0.25rem;
+}
+
+.close {
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.breadcrumb {
+    background-color: #ffffff;
+}
+
+.select2-container--open {
+    z-index: 1111
+}
+
+.control-label {
+    font-weight: 700;
+}
+
+label {
+    font-weight: 700;
+}
