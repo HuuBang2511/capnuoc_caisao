@@ -31,4 +31,24 @@ class MapController extends Controller
             'filterData' => $filterData
         ]);
     }
+
+    public function actionCaiSao()
+    {
+        $this->layout = false;
+        
+        // Lấy dữ liệu danh mục cho bộ lọc (Giữ nguyên)
+        $filterData = [
+            'loaiong' => DmLoaiong::find()->select(['id', 'ten'])->asArray()->all(),
+            'hieudongho' => DmHieudongho::find()->select(['id', 'ten'])->asArray()->all(),
+            'tinhtrang' => DmTinhtrang::find()->select(['id', 'ten'])->asArray()->all(),
+            'nguyennhan' => DmSucoNguyennhan::find()->select(['id', 'ten'])->asArray()->all(),
+            'loaiham' => DmLoaiham::find()->select(['id', 'ten'])->asArray()->all(),
+            'loaimoinoi' => DmLoaimoinoi::find()->select(['id', 'ten'])->asArray()->all(),
+        ];
+
+        return $this->render('caisao', [
+            'filterData' => $filterData
+        ]);
+    }
+
 }
