@@ -12,8 +12,8 @@ LeafletDrawAsset::register($this);
 LeafletMeasureAsset::register($this);
 LeafletLocateAsset::register($this);
 
-$geoserverWmsUrl = 'http://103.77.166.55:8080/geoserver/capnuoc_hocau/wms';
-$geoserverWfsUrl = 'http://103.77.166.55:8080/geoserver/capnuoc_hocau/wfs';
+$geoserverWmsUrl = 'http://103.77.166.55:8080/geoserver/capnuoc_caisao/wms';
+$geoserverWfsUrl = 'http://103.77.166.55:8080/geoserver/capnuoc_caisao/wfs';
 $geoserverWmtsUrl = 'http://103.77.166.55:8080/geoserver/gwc/service/wmts';
 
 $detailLinks = [
@@ -831,23 +831,23 @@ $this->beginPage();
                     <?php
                     $layerGroups = [
                         'Mạng Lưới Đường Ống' => [
-                            ['id' => 'truyendan', 'layer' => 'capnuoc_hocau:network_ongtruyendan', 'label' => 'Ống nước thô', 'checked' => true, 'z' => 20],
-                            ['id' => 'phanphoi', 'layer' => 'capnuoc_hocau:network_ongphanphoi', 'label' => 'Ống phân phối', 'checked' => true, 'z' => 20],
-                            ['id' => 'dansinh', 'layer' => 'capnuoc_hocau:network_ongdansinh', 'label' => 'Ống dân sinh', 'checked' => true, 'z' => 20],
-                            ['id' => 'moinoi', 'layer' => 'capnuoc_hocau:network_moinoi', 'label' => 'Mối nối', 'checked' => false, 'z' => 30],
+                            ['id' => 'truyendan', 'layer' => 'capnuoc_caisao:network_ongtruyendan', 'label' => 'Ống nước thô', 'checked' => true, 'z' => 20],
+                            ['id' => 'phanphoi', 'layer' => 'capnuoc_caisao:network_ongphanphoi', 'label' => 'Ống phân phối', 'checked' => true, 'z' => 20],
+                            ['id' => 'dansinh', 'layer' => 'capnuoc_caisao:network_ongdansinh', 'label' => 'Ống dân sinh', 'checked' => true, 'z' => 20],
+                            ['id' => 'moinoi', 'layer' => 'capnuoc_caisao:network_moinoi', 'label' => 'Mối nối', 'checked' => false, 'z' => 30],
                         ],
                         'Thiết Bị & Đồng Hồ' => [
-                            ['id' => 'van', 'layer' => 'capnuoc_hocau:network_van', 'label' => 'Van', 'checked' => true, 'z' => 30],
-                            ['id' => 'dhtong', 'layer' => 'capnuoc_hocau:network_donghotong', 'label' => 'Đồng hồ tổng', 'checked' => true, 'z' => 30],
-                            ['id' => 'dhnhamay', 'layer' => 'capnuoc_hocau:network_donghonhamay', 'label' => 'Đồng hồ nhà máy', 'checked' => false, 'z' => 30],
+                            ['id' => 'van', 'layer' => 'capnuoc_caisao:network_van', 'label' => 'Van', 'checked' => true, 'z' => 30],
+                            ['id' => 'dhtong', 'layer' => 'capnuoc_caisao:network_donghotong', 'label' => 'Đồng hồ tổng', 'checked' => true, 'z' => 30],
+                            ['id' => 'dhnhamay', 'layer' => 'capnuoc_caisao:network_donghonhamay', 'label' => 'Đồng hồ nhà máy', 'checked' => false, 'z' => 30],
                         ],
                         'Công Trình & Khác' => [
-                            ['id' => 'nhamay', 'layer' => 'capnuoc_hocau:network_nhamaynuoc', 'label' => 'Nhà máy nước', 'checked' => true, 'z' => 10],
-                            ['id' => 'base_ranhnhamay', 'layer' => 'capnuoc_hocau:base_ranhnhamay', 'label' => 'Ranh giới nhà máy nước', 'checked' => true, 'z' => 5],
-                            ['id' => 'ham', 'layer' => 'capnuoc_hocau:network_hamkythuat', 'label' => 'Hầm kỹ thuật', 'checked' => false, 'z' => 10],
-                            ['id' => 'hanhlang', 'layer' => 'capnuoc_hocau:network_hanglangantoan', 'label' => 'Hành lang an toàn', 'checked' => false, 'z' => 10],
-                            ['id' => 'cocmoc', 'layer' => 'capnuoc_hocau:network_cocmoc', 'label' => 'Cọc mốc', 'checked' => false, 'z' => 30],
-                            ['id' => 'suco', 'layer' => 'capnuoc_hocau:network_suco', 'label' => 'Điểm sự cố', 'checked' => true, 'z' => 40],
+                            ['id' => 'nhamay', 'layer' => 'capnuoc_caisao:network_nhamaynuoc', 'label' => 'Nhà máy nước', 'checked' => true, 'z' => 10],
+                            ['id' => 'base_ranhnhamay', 'layer' => 'capnuoc_caisao:base_ranhnhamay', 'label' => 'Ranh giới nhà máy nước', 'checked' => true, 'z' => 5],
+                            ['id' => 'ham', 'layer' => 'capnuoc_caisao:network_hamkythuat', 'label' => 'Hầm kỹ thuật', 'checked' => false, 'z' => 10],
+                            ['id' => 'hanhlang', 'layer' => 'capnuoc_caisao:network_hanglangantoan', 'label' => 'Hành lang an toàn', 'checked' => false, 'z' => 10],
+                            ['id' => 'cocmoc', 'layer' => 'capnuoc_caisao:network_cocmoc', 'label' => 'Cọc mốc', 'checked' => false, 'z' => 30],
+                            ['id' => 'suco', 'layer' => 'capnuoc_caisao:network_suco', 'label' => 'Điểm sự cố', 'checked' => true, 'z' => 40],
                         ],
                     ];
                     foreach ($layerGroups as $gname => $layers):
@@ -899,6 +899,35 @@ $this->beginPage();
                                         id="iot-count">0</b></div>
                                 <div style="display:flex;justify-content:space-between;margin-top:3px;"><span>Cập
                                         nhật:</span><b id="iot-upd">--:--</b></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ĐỒNG HỒ LƯU LƯỢNG (donghonuocthongminh.vn) -->
+                    <div class="lg">
+                        <div class="lg-hd" onclick="toggleLG('lg-dhn')"
+                            style="background:linear-gradient(135deg,#ecfeff,#e0f2fe);">
+                            <span style="color:#075985;font-weight:700;">
+                                <i class="fa-solid fa-water me-1" style="color:#0284c7;"></i>
+                                Đồng hồ lưu lượng
+                            </span>
+                            <div style="display:flex;align-items:center;gap:6px;">
+                                <span id="dhn-dot"
+                                    style="width:8px;height:8px;border-radius:50%;background:#94a3b8;transition:background .3s;"></span>
+                                <i class="fa-solid fa-chevron-up lg-icon-lg-dhn"></i>
+                            </div>
+                        </div>
+                        <div class="lg-body" id="lg-dhn">
+                            <div class="chk-row mb-2">
+                                <input type="checkbox" id="dhn-toggle" checked>
+                                <label for="dhn-toggle" style="font-weight:600;">Hiển thị đồng hồ lưu lượng</label>
+                            </div>
+                            <div id="dhn-list" style="font-size:.78rem;"></div>
+                            <div
+                                style="background:#f8f9fa;border-radius:6px;padding:8px 10px;margin-top:8px;font-size:.76rem;color:#6c757d;">
+                                <div style="display:flex;justify-content:space-between;"><span>Nguồn:</span><b>donghonuocthongminh.vn</b></div>
+                                <div style="display:flex;justify-content:space-between;margin-top:3px;"><span>Cập
+                                        nhật:</span><b id="dhn-upd">--:--</b></div>
                             </div>
                         </div>
                     </div>
@@ -966,9 +995,9 @@ $this->beginPage();
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <select class="form-select form-select-sm mb-2" id="search-layer">
-                        <option value="capnuoc_hocau:network_donghonhamay">Đồng hồ nhà máy</option>
-                        <option value="capnuoc_hocau:network_van">Van</option>
-                        <option value="capnuoc_hocau:network_suco">Sự cố</option>
+                        <option value="capnuoc_caisao:network_donghonhamay">Đồng hồ nhà máy</option>
+                        <option value="capnuoc_caisao:network_van">Van</option>
+                        <option value="capnuoc_caisao:network_suco">Sự cố</option>
                     </select>
                     <div id="search-res"
                         style="min-height:100px;border:1px solid #dee2e6;border-radius:6px;background:#f9fafb;">
@@ -1089,6 +1118,8 @@ $this->beginPage();
         const DET_LINKS = <?= Json::encode($detailLinks) ?>;
         const IOT_KEY = 'SCADA_HOCAU_2024_SECRET_KEY';
         const IOT_BASE = '/iot_api.php';
+        const DHN_LATEST = '<?= Url::to(['/quanly/map/dhn-latest']) ?>';
+        const DHN_HISTORY = '<?= Url::to(['/quanly/map/dhn-history']) ?>';
         const defaultCenter = [10.737202, 106.915000];
         const defaultZoom = 14;
 
@@ -1096,12 +1127,12 @@ $this->beginPage();
         // FILTER CONFIG (dựa trên schema thực)
         // ================================================================
         const FILTER_CFG = {
-            'capnuoc_hocau:network_ongphanphoi': { field: 'loaiong_id', label: 'Chất liệu ống', options: <?= Json::encode($filterData['loaiong'] ?? []) ?> },
-            'capnuoc_hocau:network_donghonhamay': { field: 'hieudongho_id', label: 'Hiệu đồng hồ', options: <?= Json::encode($filterData['hieudongho'] ?? []) ?> },
-            'capnuoc_hocau:network_van': { field: 'tinhtrang_id', label: 'Trạng thái van', options: <?= Json::encode($filterData['tinhtrang'] ?? []) ?> },
-            'capnuoc_hocau:network_suco': { field: 'nguyennhansuco_id', label: 'Nguyên nhân sự cố', options: <?= Json::encode($filterData['nguyennhan'] ?? []) ?> },
-            'capnuoc_hocau:network_hamkythuat': { field: 'loaiham_id', label: 'Loại hầm', options: <?= Json::encode($filterData['loaiham'] ?? []) ?> },
-            'capnuoc_hocau:network_moinoi': { field: 'loaimoinoi_id', label: 'Kiểu mối nối', options: <?= Json::encode($filterData['loaimoinoi'] ?? []) ?> },
+            'capnuoc_caisao:network_ongphanphoi': { field: 'loaiong_id', label: 'Chất liệu ống', options: <?= Json::encode($filterData['loaiong'] ?? []) ?> },
+            'capnuoc_caisao:network_donghonhamay': { field: 'hieudongho_id', label: 'Hiệu đồng hồ', options: <?= Json::encode($filterData['hieudongho'] ?? []) ?> },
+            'capnuoc_caisao:network_van': { field: 'tinhtrang_id', label: 'Trạng thái van', options: <?= Json::encode($filterData['tinhtrang'] ?? []) ?> },
+            'capnuoc_caisao:network_suco': { field: 'nguyennhansuco_id', label: 'Nguyên nhân sự cố', options: <?= Json::encode($filterData['nguyennhan'] ?? []) ?> },
+            'capnuoc_caisao:network_hamkythuat': { field: 'loaiham_id', label: 'Loại hầm', options: <?= Json::encode($filterData['loaiham'] ?? []) ?> },
+            'capnuoc_caisao:network_moinoi': { field: 'loaimoinoi_id', label: 'Kiểu mối nối', options: <?= Json::encode($filterData['loaimoinoi'] ?? []) ?> },
         };
 
         // ================================================================
@@ -1132,16 +1163,25 @@ $this->beginPage();
             clo: '#a5f3fc',
             do_duc: '#fcd34d',
             muc_be: '#86efac',
+            // Đồng hồ lưu lượng (donghonuocthongminh)
+            short_l: '#38bdf8',
+            amount: '#4ade80',
+            p_amount: '#86efac',
+            r_amount: '#f87171',
+            san_luong_ngay: '#22d3ee',
+            pressure: '#00d4ff',
+            bat: '#fbbf24',
         };
 
         // Fields hiển thị trong tooltip hover (theo thứ tự ưu tiên)
-        const TOOLTIP_PRIORITY = ['ap_luc', 'ap_luc_sau_van', 'luu_luong_thuan', 'cong_suat', 'tan_so_bom_1'];
+        const TOOLTIP_PRIORITY = ['ap_luc', 'ap_luc_sau_van', 'luu_luong_thuan', 'cong_suat', 'tan_so_bom_1', 'short_l', 'amount', 'san_luong_ngay', 'pressure'];
 
         // ================================================================
         // STATE
         // ================================================================
         let map, wmsLayers = {};
         let iotLayerGroup, iotMarkers = {};
+        let dhnLayerGroup, dhnMarkers = {};
         let showLabels = true;
         let chartInst = null;
         let curChartCid = null, curChartRange = '1h';
@@ -1167,7 +1207,64 @@ $this->beginPage();
             });
 
             setTimeout(() => { fetchIot(); setInterval(fetchIot, 30000); }, 1500);
+
+            // Đồng hồ lưu lượng (dữ liệu theo giờ -> làm mới mỗi 5 phút)
+            dhnLayerGroup = L.layerGroup().addTo(map);
+            document.getElementById('dhn-toggle').addEventListener('change', function () {
+                this.checked ? map.addLayer(dhnLayerGroup) : map.removeLayer(dhnLayerGroup);
+            });
+            fetchDhn(); setInterval(fetchDhn, 300000);
         });
+
+        // ================================================================
+        // ĐỒNG HỒ LƯU LƯỢNG (donghonuocthongminh.vn qua proxy MapController)
+        // ================================================================
+        function fetchDhn() {
+            fetch(DHN_LATEST)
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+                .then(data => {
+                    document.getElementById('dhn-upd').textContent = new Date().toLocaleTimeString('vi-VN');
+                    document.getElementById('dhn-dot').style.background = '#22c55e';
+                    let list = '';
+                    Object.entries(data).forEach(([sid, d]) => {
+                        renderDhnMarker(sid, d);
+                        const ci = iotColor(d);
+                        const q = d.channels?.short_l?.value;
+                        list += `<div onclick="focusDhn('${esc(sid)}')" style="display:flex;align-items:center;gap:6px;padding:5px 6px;border-radius:5px;cursor:pointer;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background=''">
+                            <span style="width:8px;height:8px;border-radius:50%;flex-shrink:0;background:${ci.fill};"></span>
+                            <span style="flex:1;line-height:1.25;">${esc(d.ten_tram)}</span>
+                            <b style="white-space:nowrap;color:#0369a1;">${q != null ? fmt(q) + ' m³/h' : '—'}</b>
+                        </div>`;
+                    });
+                    document.getElementById('dhn-list').innerHTML = list;
+                })
+                .catch(() => { document.getElementById('dhn-dot').style.background = '#ef4444'; });
+        }
+
+        function renderDhnMarker(sid, d) {
+            if (!d.lat || !d.lng) return;
+            const ll = [parseFloat(d.lat), parseFloat(d.lng)];
+            if (dhnMarkers[sid]) {
+                dhnMarkers[sid].setLatLng(ll).setIcon(createIcon(d));
+                dhnMarkers[sid]._d = d;
+                dhnMarkers[sid].setTooltipContent(buildTooltip(d));
+            } else {
+                const m = L.marker(ll, { icon: createIcon(d), zIndexOffset: 1100 });
+                m._d = d;
+                m.bindTooltip(buildTooltip(d), { permanent: false, direction: 'right', className: 'iot-tip', offset: [14, 0], opacity: 1 });
+                m.on('click', e => { L.DomEvent.stopPropagation(e); openPanel(sid, m._d); });
+                m.addTo(dhnLayerGroup);
+                dhnMarkers[sid] = m;
+            }
+        }
+
+        function focusDhn(sid) {
+            const m = dhnMarkers[sid];
+            if (!m) return;
+            if (!map.hasLayer(dhnLayerGroup)) { document.getElementById('dhn-toggle').checked = true; map.addLayer(dhnLayerGroup); }
+            map.setView(m.getLatLng(), Math.max(map.getZoom(), 16));
+            openPanel(sid, m._d);
+        }
 
         // ================================================================
         // MAP
@@ -1184,7 +1281,7 @@ $this->beginPage();
             if (window._basemap) map.removeLayer(window._basemap);
             let layer;
             if (t === 'hocau_base') {
-                layer = L.tileLayer(GEO_WMTS + '?service=WMTS&request=GetTile&version=1.0.0&layer=capnuoc_hocau:base_thuadat&style=&tilematrixset=EPSG:900913&format=image/png&tilematrix=EPSG:900913:{z}&tilerow={y}&tilecol={x}', { maxZoom: 22 });
+                layer = L.tileLayer(GEO_WMTS + '?service=WMTS&request=GetTile&version=1.0.0&layer=capnuoc_caisao:base_thuadat&style=&tilematrixset=EPSG:900913&format=image/png&tilematrix=EPSG:900913:{z}&tilerow={y}&tilecol={x}', { maxZoom: 22 });
             } else if (t.startsWith('google')) {
                 const s = t === 'google_satellite' ? 's,h' : 'm';
                 layer = L.tileLayer(`https://{s}.google.com/vt/lyrs=${s}&x={x}&y={y}&z={z}`, { maxZoom: 22, subdomains: ['mt0', 'mt1', 'mt2', 'mt3'] });
@@ -1197,10 +1294,9 @@ $this->beginPage();
         function initWmsLayers() {
             // Van, moi noi, coc moc chi hien tu zoom 15+ de tranh ban do bi roi
             const LAYER_MIN_ZOOM = {
-                'capnuoc_hocau:network_van': 15,
-                'capnuoc_hocau:network_moinoi': 15,
-                'capnuoc_hocau:network_cocmoc': 16,
-                'capnuoc_hocau:network_hamkythuat': 15,
+                'capnuoc_caisao:network_moinoi': 15,
+                'capnuoc_caisao:network_cocmoc': 16,
+                'capnuoc_caisao:network_hamkythuat': 15,
             };
             document.querySelectorAll('.wms-chk').forEach(chk => {
                 const name = chk.dataset.layer, z = parseInt(chk.dataset.z) || 10;
@@ -1220,6 +1316,10 @@ $this->beginPage();
             if (d.last_update) {
                 const h = (Date.now() - new Date(d.last_update).getTime()) / 3600000;
                 if (h > 12) return { fill: '#f97316', glow: '#f97316', status: 'offline', label: 'Mất tín hiệu' };
+            }
+            if (d.source === 'dhn') {
+                if (d.error || !d.last_update) return { fill: '#64748b', glow: '#94a3b8', status: 'none', label: 'Chưa có dữ liệu' };
+                return { fill: '#0284c7', glow: '#38bdf8', status: 'flow', label: 'Đồng hồ lưu lượng' };
             }
             const ch = d.channels || {};
             const apField = ch['ap_luc'] ?? ch['ap_luc_sau_van'] ?? ch['ap_luc_truoc_van'] ?? null;
@@ -1286,7 +1386,7 @@ $this->beginPage();
         }
 
         function rebuildMarkerIcons() {
-            Object.values(iotMarkers).forEach(m => { if (m._d) m.setIcon(createIcon(m._d)); });
+            [...Object.values(iotMarkers), ...Object.values(dhnMarkers)].forEach(m => { if (m._d) m.setIcon(createIcon(m._d)); });
         }
 
         // ================================================================
@@ -1326,7 +1426,9 @@ $this->beginPage();
         function openPanel(sid, d) {
             const ci = iotColor(d);
             document.getElementById('ip-name').textContent = d.ten_tram || sid;
-            document.getElementById('ip-sub').textContent = `Mã trạm: ${sid} | ${d.loai || ''}`;
+            document.getElementById('ip-sub').textContent = d.source === 'dhn'
+                ? `Logger: ${sid} | ${d.loai || ''}`
+                : `Mã trạm: ${sid} | ${d.loai || ''}`;
 
             const badge = document.getElementById('ip-badge');
             badge.className = 'badge ' + (ci.status === 'offline' ? 'badge-off' : ci.status === 'alert' ? 'badge-warn' : 'badge-on');
@@ -1351,7 +1453,7 @@ $this->beginPage();
                 html += `<div class="sec-title">${grpLabel}</div><div class="metric-grid">`;
                 groups[grp].forEach(c => {
                     const col = FIELD_COLOR[c.fk] || gcfg?.color || '#4d9de0';
-                    const wide = ['san_luong_ngay', 'san_luong_thang', 'san_luong_nam', 'chi_so_dien'].includes(c.fk) ? ' wide' : '';
+                    const wide = ['san_luong_ngay', 'san_luong_thang', 'san_luong_nam', 'chi_so_dien', 'amount', 'p_amount', 'r_amount'].includes(c.fk) ? ' wide' : '';
                     html += `
                 <div class="metric${wide}" style="--mc:${col};" onclick="openChart('${c.channel_id}','${esc(c.label)}','${esc(c.unit)}','${col}')">
                     <div class="metric-lbl">${esc(c.label)}</div>
@@ -1405,8 +1507,11 @@ $this->beginPage();
             document.getElementById('cp-loading').classList.add('show');
             if (chartInst) { chartInst.destroy(); chartInst = null; }
 
-            const url = `${IOT_BASE}?action=history&channel_id=${encodeURIComponent(curChartCid)}&range=${curChartRange}&key=${IOT_KEY}`;
-            fetch(url, { headers: { 'Authorization': 'Bearer ' + IOT_KEY } })
+            const isDhn = String(curChartCid).startsWith('dhn|');
+            const url = isDhn
+                ? `${DHN_HISTORY}?channel_id=${encodeURIComponent(curChartCid)}&range=${curChartRange}`
+                : `${IOT_BASE}?action=history&channel_id=${encodeURIComponent(curChartCid)}&range=${curChartRange}&key=${IOT_KEY}`;
+            fetch(url, isDhn ? {} : { headers: { 'Authorization': 'Bearer ' + IOT_KEY } })
                 .then(r => r.json())
                 .then(data => {
                     document.getElementById('cp-loading').classList.remove('show');
@@ -1539,12 +1644,11 @@ $this->beginPage();
             document.body.style.cursor = 'wait';
 
             // Dung buffer_pixel lon hon de bat duoc features gan vung click
-            const p = {
+            const base = {
                 request: 'GetFeatureInfo', service: 'WMS', srs: 'EPSG:4326', version: '1.1.0',
                 format: 'image/png',
                 bbox: map.getBounds().toBBoxString(),
                 height: map.getSize().y, width: map.getSize().x,
-                layers: active.join(','), query_layers: active.join(','),
                 info_format: 'application/json',
                 feature_count: 10,   // Lay nhieu hon de hien danh sach
                 x: Math.round(e.containerPoint.x),
@@ -1552,13 +1656,24 @@ $this->beginPage();
                 BUFFER: 8,           // Buffer pixel de bat diem/line de hon
             };
 
-            fetch(GEO_WMS + L.Util.getParamString(p, GEO_WMS, true))
-                .then(r => r.json())
-                .then(data => {
-                    document.body.style.cursor = 'default';
-                    if (!data.features?.length) return;
+            // Goi rieng tung lop: neu 1 lop loi tren GeoServer (tra ve XML ServiceException)
+            // thi chi bo qua lop do, cac lop khac van hien thong tin binh thuong
+            const reqs = active.map(name => {
+                const p = { ...base, layers: name, query_layers: name };
+                return fetch(GEO_WMS + L.Util.getParamString(p, GEO_WMS, true))
+                    .then(r => r.text())
+                    .then(txt => {
+                        try { return JSON.parse(txt).features || []; }
+                        catch (_) { console.warn('GetFeatureInfo lỗi ở lớp', name, txt.slice(0, 300)); return []; }
+                    })
+                    .catch(err => { console.warn('GetFeatureInfo lỗi ở lớp', name, err); return []; });
+            });
 
-                    const features = data.features;
+            Promise.all(reqs)
+                .then(results => {
+                    document.body.style.cursor = 'default';
+                    const features = results.flat();
+                    if (!features.length) return;
 
                     if (features.length === 1) {
                         // Chi co 1 doi tuong: hien luon
@@ -1795,9 +1910,9 @@ $this->beginPage();
         // SEARCH
         // ================================================================
         const SEARCH_CFG = {
-            'capnuoc_hocau:network_donghonhamay': { fields: ['objectid', 'shd', 'ten_khach_hang', 'dia_chi'], display: p => `<b>${p.ten_khach_hang || 'N/A'}</b><br><small>${p.dia_chi || ''}</small>` },
-            'capnuoc_hocau:network_van': { fields: ['objectid', 'vitri', 'lydoghi'], display: p => `<b>Van: ${p.objectid}</b><br><small>${p.vitri || ''}</small>` },
-            'capnuoc_hocau:network_suco': { fields: ['masuco', 'vitri', 'nguyennhan', 'ghichu'], display: p => `<b>SC: ${p.masuco || p.id}</b><br><small>${p.vitri || ''}</small>` },
+            'capnuoc_caisao:network_donghonhamay': { fields: ['objectid', 'shd', 'ten_khach_hang', 'dia_chi'], display: p => `<b>${p.ten_khach_hang || 'N/A'}</b><br><small>${p.dia_chi || ''}</small>` },
+            'capnuoc_caisao:network_van': { fields: ['objectid', 'vitri', 'lydoghi'], display: p => `<b>Van: ${p.objectid}</b><br><small>${p.vitri || ''}</small>` },
+            'capnuoc_caisao:network_suco': { fields: ['masuco', 'vitri', 'nguyennhan', 'ghichu'], display: p => `<b>SC: ${p.masuco || p.id}</b><br><small>${p.vitri || ''}</small>` },
             'default': { fields: ['objectid'], display: p => `<b>${p.objectid || 'Đối tượng'}</b>` },
         };
         function doSearch() {
